@@ -148,6 +148,32 @@ siralisayilar = besyuzdenkucuksayilar.slice().sort((a, b) => {
 
 // 3f çözümü
 
+tekraredensayilar = [];
+const depo = [];
+for ( let sayi of sayilar) {
+  if(depo[sayi]=== undefined){
+    depo[sayi]=1;
+  }
+  else {
+    depo[sayi]++;
+  }
+for(let key in depo){
+  if(depo[sayi]>1){
+    tekraredensayilar.push(`${key} sayısı ${depo[key]} kere tekrar edilmiştir`);
+  }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 /* kodlar buraya */
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
